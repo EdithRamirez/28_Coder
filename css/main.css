@@ -1,0 +1,156 @@
+/* Tu CSS va aqui */
+/*para que navfix no tenga espacio*/
+body{ 
+	padding-top: 50px; 
+}
+nav.navbar{
+	background-color: rgba(232,31,12,.5);
+	border: 0;
+}
+.lista{
+	color: #666 !important;
+}
+
+/*imagen de fondo*/
+.img-fondo{
+	background-image: url("../img/header.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 100% 100%;
+	width: 100%;
+	height: 600px;
+}
+/*texto color blanco*/
+.txt-blanco{
+	color: #fff;
+}
+/*texto color blanco*/
+.txt-negro{
+	color: #000;
+}
+/*color texto naranja*/
+.txt-naranja{
+	color: #F05F40;
+}
+/*fondo naranja*/
+.bg-naranja{
+	background-color: #F05F40;
+}
+/*fondo gris*/
+.bg-gris{
+	background-color: #222222;
+}
+/*enlaces*/
+a, button{
+	cursor: pointer;
+	color: #000;
+}
+a:hover{
+	text-decoration: none;
+	color: #0A105A;
+}
+/*padding y margin*/
+.pd-3{
+	padding: 3%;
+}
+.pdt-3{
+	padding-top: 3%;
+}
+.pd-8{
+	padding: 8%;
+}
+.pd-5-10{
+	padding: 5% 10%;
+}
+.pd-0{
+	padding: 0;
+}
+.pd-15{
+	padding: 5% 15%; 
+}
+/*estilo de botones*/
+button{
+	border-radius: 50px;
+	border: none;
+	padding: 1% 2%;
+	margin-top: 3%;
+}
+.btn-blanco{
+	background-color: #fff;
+}
+.lista, h2, h4, button{
+	font-weight: bold;
+}
+/*cuadro cuando pasa puntero*/
+.mascara{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	padding: 15%;
+}
+/* Responsive */
+@media screen and (min-width: 940px) {
+	h2{
+		padding: 10% 26% 5%;
+		font-size: 3em;
+	}
+	/*linea*/
+	hr{
+		border: 1px solid #F05F40;
+		width: 5%;
+	}
+	hr.linea-blanca{
+		border-color: #FFF;
+	}
+	/*padding de h2*/
+	.pd-20{
+		padding: 2% 20%; 
+	}
+	/*cuadro cuando pasa puntero*/
+	.mascara p{
+		font-size: 1em;
+	}
+	.mascara:hover{
+		opacity: 0.8;
+		transition: 1s;
+	}
+}
+@media screen and (max-width: 600px) {
+	/*linea*/
+	hr{
+		width: 10%;
+	}
+	/*imagen de fondo*/
+	.img-fondo{
+		height: 300px;
+	}
+	/*boton*/
+	button{
+		margin: 5% 0; 
+	}
+	/*iconos*/
+	div span{
+		margin-top: 4%;
+	}
+	/*texto de cuadro gris*/
+	.txt-grande{
+		font-size: 2em;
+		padding: 4% 15% 0; /*padding top, right left, bottom*/
+	}
+	/*cuadro cuando pasa puntero*/
+	.mascara{
+		width: 100%;
+		height: 400px;
+		padding: 20%;
+	}
+	.mascara p {
+		font-size: 1.5em;
+	}
+	.mascara:hover{
+		opacity: 0.8;
+		transition: 1s;
+	}
+}
