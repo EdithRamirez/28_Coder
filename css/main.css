@@ -7,18 +7,22 @@ nav.navbar{
 	background-color: rgba(232,31,12,.5);
 	border: 0;
 }
-.lista{
-	color: #666 !important;
+/*estilos del menu*/
+ul.lista li a{
+	color: #fff !important;
 }
-
+ul.lista li:hover{
+	background-color: #F7B5B5;
+}
+.lista a:hover{
+	color: #790000 !important;
+}
 /*imagen de fondo*/
 .img-fondo{
 	background-image: url("../img/header.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
 	background-position: 100% 100%;
-	width: 100%;
-	height: 600px;
+	padding: 15%;
 }
 /*texto color blanco*/
 .txt-blanco{
@@ -91,15 +95,17 @@ button{
 	opacity: 0;
 	padding: 15%;
 }
+hr{
+	width: 8%;
+	border: 1px solid #F05F40;
+}
 /* Responsive */
 @media screen and (min-width: 940px) {
 	h2{
-		padding: 10% 26% 5%;
 		font-size: 3em;
 	}
 	/*linea*/
 	hr{
-		border: 1px solid #F05F40;
 		width: 5%;
 	}
 	hr.linea-blanca{
@@ -117,15 +123,21 @@ button{
 		opacity: 0.8;
 		transition: 1s;
 	}
+	.img-fondo{
+		background-size: 100%
+	}
 }
 @media screen and (max-width: 600px) {
+	h2{
+		font-size: 2em;
+	}
 	/*linea*/
 	hr{
 		width: 10%;
 	}
 	/*imagen de fondo*/
 	.img-fondo{
-		height: 300px;
+		padding: 10%;
 	}
 	/*boton*/
 	button{
