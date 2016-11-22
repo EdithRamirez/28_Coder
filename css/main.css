@@ -22,7 +22,10 @@ ul.lista li:hover{
 	background-image: url("../img/header.jpg");
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
-	padding: 15%;
+	padding: 10%;
+}
+a#titulo{
+	color: #54080B !important;
 }
 /*texto color blanco*/
 .txt-blanco{
